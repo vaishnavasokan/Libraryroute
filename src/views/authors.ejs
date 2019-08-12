@@ -90,18 +90,20 @@
           
           
           <!--/stories-->
-          <% for(var i=0;i<bookdetails.length;i++){%>
+          <% for(var i=0;i<authordetails.length;i++){%>
           <div class="row">    
             <br>
             <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="<%= bookdetails[i].image%>" style="width:100px;height:100px" class="img-circle"></a>
+              <a class="story-title" href="#"><img alt="" src="<%= authordetails[i].image%>" style="width:100px;height:100px" class="img-circle"></a>
             </div>
             <div class="col-md-10 col-sm-9">
-              <h3><%= bookdetails[i].title%></h3>
+              <h3><%= authordetails[i].title%></h3>
               <div class="row">
                 <div class="col-xs-9">
-                  <h4><span class="label label-default"><%= bookdetails[i].author%></span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted"><%= bookdetails[i].category%> <a href="/book/<%= i%>" class="text-muted">Read More</a></small>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis rem voluptatem quo eligendi vitae, repudiandae quibusdam ipsam voluptate nihil quidem dignissimos ea, error totam beatae delectus eveniet, illo dolor numquam?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, perferendis vel quasi eveniet provident maxime voluptatem? Inventore, impedit reprehenderit! Minima consectetur commodi fugiat ipsa debitis nemo quam quia possimus quibusdam.
+                  
+                  <small style="font-family:courier,'new courier';" class="text-muted"> <a href="<%= authordetails[i].about%>" class="text-muted">Read More</a></small>
                   </h4></div>
                 <div class="col-xs-3"></div>
               </div>

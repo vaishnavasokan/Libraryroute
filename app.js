@@ -3,7 +3,10 @@ const app=express();
 const path=require("path");
 
 var bookrouter=require("./Routes/bookrouter");
+var authorrouter=require("./Routes/authorrouter");
+
 app.use("/book",bookrouter);
+app.use("/authors",authorrouter);
 
 
 app.use(express.static(path.join(__dirname,"/public")));
