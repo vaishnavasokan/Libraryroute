@@ -2,7 +2,7 @@ var express = require("express");
 const router=express.Router();
 
 var mongoose=require("mongoose");
-var url="mongodb://localhost/books"
+var url="mongodb://localhost/library"
 
 var book =require("../model/books")
 
